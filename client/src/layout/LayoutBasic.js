@@ -1,22 +1,25 @@
 import React from "react";
-import { Layout } from "antd";
+import { Row, Col } from "antd";
 import { Route, Switch } from "react-router-dom";
+import MenuTop from "../components/Web/MenuTop";
+import Footer from "../components/Web/Footer";
 
 import "./LayoutBasic.scss";
 export default function LayoutBasic(props) {
-  console.log(props);
   const { routes } = props;
-  const { Content, Footer } = Layout;
+
   return (
-    <Layout>
-      <h2>Menu....</h2>
-      <Layout>
-        <Content>
-          <LoadRouters routes={routes} />
-        </Content>
-        <Footer>Miguel angel quintero Giraldo - Lastra</Footer>
-      </Layout>
-    </Layout>
+    <>
+      <Row>
+        <Col lg={4} />
+        <Col lg={16}>
+          <MenuTop />
+        </Col>
+        <Col lg={4} />
+      </Row>
+      <LoadRouters routes={routes} />
+      <Footer />
+    </>
   );
 }
 //genere rutas hijas

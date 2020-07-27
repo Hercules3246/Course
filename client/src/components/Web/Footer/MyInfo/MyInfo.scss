@@ -1,0 +1,20 @@
+@import "../../../../scss/index.scss";
+
+.my-info {
+  img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  h5 {
+    margin-bottom: 20px;
+    color: $primary-color-dark;
+  }
+  h3 {
+    color: $font-light;
+    font-weight: bold;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+}

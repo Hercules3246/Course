@@ -30,21 +30,26 @@ function MenuSidebar(props) {
             to={"/admin/users"}
           >
             <Icon type="user" />
-            <span className="">Usuarios</span>
+            <span className="nac-text">Usuarios</span>
           </Link>
         </MenuItem>
-        <MenuItem className="customclass" key="/admin/product">
+        <MenuItem className="customclass" key="/admin/menu">
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
-            to={"/admin/product"}
+            to={"/admin/menu"}
           >
-            <Icon type="book" />
-            <span className="">Producto</span>
+            <Icon type="menu" />
+            <span className="nac-text">Menu</span>
           </Link>
         </MenuItem>
-        <MenuItem className="customclass" key="3">
-          <Icon type="menu" />
-          <span className="">Entradas</span>
+        <MenuItem className="customclass" key="/admin/courses">
+          <Link
+            style={{ color: "inherit", textDecoration: "inherit" }}
+            to={"/admin/courses"}
+          >
+            <Icon type="book" />
+            <span className="nac-text">Cursos</span>
+          </Link>
         </MenuItem>
         <MenuItem className="customclass" key="4">
           <Icon type="menu" />

@@ -8,7 +8,6 @@ import { logout } from "../../../api/auth";
 
 export default function MenuTop(props) {
   const { menuCollapsed, setMenuCollapsed } = props;
-  const redirect = Link;
 
   const logoutUser = () => {
     logout();
